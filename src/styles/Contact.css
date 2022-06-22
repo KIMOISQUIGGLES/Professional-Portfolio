@@ -1,0 +1,35 @@
+#Resume {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+
+#resumeDownload {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#myResume {
+    border: 5px;
+    border-style: double;
+    border-radius: 15px;
+    border-color: rgba(247, 43, 216, 0.64);
+    background: rgba(25, 15, 37, 0.9);
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+    width: 40%;
+    height: 40%;
+}
+
+#Skills h4 {
+    background: rgba(25, 15, 37, 0.1);
+}
+
+#myResume:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+    box-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+    filter: invert(0);
+}

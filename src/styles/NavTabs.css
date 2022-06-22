@@ -1,0 +1,62 @@
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh;
+}
+
+#navTitle {
+    display:flex;
+    font-size: 80%;
+    height: 18vh;
+    padding: 2vw;
+}
+
+#navRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4vw;
+    font-size: 50%;
+    width: 60vw;
+    height: 5vh;
+}
+
+#songUsed {
+    display: flex;
+    flex-direction: column;
+}
+
+.song {
+    background: rgba(25, 15, 37, 0.9);
+}
+
+#navAbout, #navPortfolio, #navContact, #navResume, #songUsed, h1{
+    list-style-type: none;
+    border-bottom: 5px;
+    transition: all 0.5s ease-in-out;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    border: 5px;
+    border-style: double;
+    border-radius: 8px;
+    border-color: rgba(247, 43, 216, 0.64);
+    background: rgba(25, 15, 37, 0.9);
+    box-sizing: border-box;
+}
+
+
+h1:hover, #navAbout:hover, #navResume:hover, #navPortfolio:hover, #navContact:hover #songUsed:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+    box-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+    filter: invert(0);
+    }
