@@ -13,7 +13,6 @@
     border-color: rgba(247, 43, 216, 0.64);
     background: rgba(25, 15, 37, 0.4);
     box-sizing: border-box;
-    transition: all 0.5s ease-in-out;
 }
 
 .contactLink:hover {
