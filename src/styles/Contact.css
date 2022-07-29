@@ -1,25 +1,17 @@
-#Resume {
+#contactContents {
     display: flex;
-    flex-direction: column;
-    gap: 5vh;
-}
-
-
-#resumeDownload {
-    display: flex;
-    justify-content: center;
-    
+    flex-direction: row;
+    gap: 3vw;
 }
 
 #myResume {
+    width: 40vw;
     border: 5px;
     border-style: double;
     border-radius: 15px;
     border-color: rgba(247, 43, 216, 0.64);
     background: rgba(25, 15, 37, 0.9);
     box-sizing: border-box;
-    width: 40%;
-    height: 40%;
 }
 
 #Skills h4 {
@@ -31,4 +23,14 @@
     text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
     box-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
     filter: invert(0);
+}
+
+@media screen and (max-width: 1023px) {
+    
+    #contactContents, #myResume {
+        display: flex;
+        flex-direction: column;
+        width: 88vw;
+        margin-left: 3vw;
+    }
 }

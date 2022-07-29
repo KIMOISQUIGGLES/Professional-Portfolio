@@ -1,11 +1,26 @@
+
 .test-mailing {
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    margin: 5vw;
+    margin-left: 3vw;
+    width: 40vw;
 }
 
-textarea {
+.test-mailing-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width: 40vw;
+}
+
+#formInput {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+input, textarea {
     border: 5px;
     border-style: double;
     border-radius: 8px;
@@ -15,7 +30,8 @@ textarea {
     box-sizing: border-box;
 }
 
-input {
+#submitButton, #callMe {
+    text-align: center;
     list-style-type: none;
     border-bottom: 5px;
     transition: all 0.2s ease-in-out;
@@ -31,9 +47,17 @@ input {
     box-sizing: border-box;
 }
 
-input:hover {
+input:hover, #submitButt:hover, #callMe:hover, textarea:hover {
     color: #fff;
     text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
     box-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
     filter: invert(0);
+}
+
+@media screen and (max-width: 1023px) {
+    
+    .test-mailing, .test-mailing-form {
+        flex-direction: column;
+        width: 88vw;
+    }
 }

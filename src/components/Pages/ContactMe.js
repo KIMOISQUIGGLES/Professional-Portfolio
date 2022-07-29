@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
-import Form from './Form.js';
+import Form from './contactForm.js';
+import Resume from './Resume.js'
 
 function ContactMe() {
 
 
   return (
     <div>
-      <Form />
+      <div id="contactContents">
+        <Form />
+        <Resume />
+      </div>
     </div>
   );
 }

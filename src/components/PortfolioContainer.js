@@ -27,7 +27,7 @@ export default function PortfolioContainer() {
         }
         
     };
-
+    
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (

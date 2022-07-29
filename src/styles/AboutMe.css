@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: row;
     gap: 3vw;
-    margin: 3vw;
+    margin: 5vw;
 
 }
 
@@ -22,6 +22,7 @@ h2 {
     border-color: rgba(247, 43, 216, 0.64);
     background: rgba(25, 15, 37, 0.9);
     box-sizing: border-box;
+    text-align: center;
 }
 
 #tylerFace {
@@ -79,4 +80,22 @@ h2 {
     color: #fff;
     box-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
     filter: invert(0);
+}
+
+@media screen and (max-width: 1023px) {
+    
+    #cardContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #tylerFace {
+        width: 100%;
+        height:100%;
+    }
+
+    #rightSide {
+        width: 100%;
+    }
+
 }

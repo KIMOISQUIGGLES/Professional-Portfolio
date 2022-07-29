@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/NavTabs.css'
+import '../styles/bubblebutton/css/style.css'
 
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
@@ -12,7 +13,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </div>
       <nav id="navRight">
         <ul className="nav nav-tabs">
-          <li className="nav-item">
+          <li className="nav-item bubbly-button">
             <a
               id="navAbout"
               href="#home"
@@ -24,7 +25,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               About
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item bubbly-button">
             <a
               id="navPortfolio"
               href="#about"
@@ -35,7 +36,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               Portfolio
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item bubbly-button">
             <a
               id="navContact"
               href="#blog"
@@ -44,17 +45,6 @@ function NavTabs({ currentPage, handlePageChange }) {
               className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
             >
               Contact
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              id="navResume"
-              href="#contact"
-              onClick={() => handlePageChange('Resume')}
-              // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-              className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-            >
-              Resume
             </a>
           </li>
 
