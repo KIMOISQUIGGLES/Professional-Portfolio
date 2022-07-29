@@ -87,7 +87,16 @@ h1:hover, #navAbout:hover, #navResume:hover, #navPortfolio:hover, #navContact:ho
 
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 550px) {
+
+    #navRight {
+        flex-direction: row;
+        width: 60vw;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
 
     #navBar {
         flex-direction: column;
@@ -111,3 +120,12 @@ h1:hover, #navAbout:hover, #navResume:hover, #navPortfolio:hover, #navContact:ho
         font-size: 75%;
     }
 }
+/* 
+@media screen and (max-width: 360px) {
+
+    #navRight {
+        flex-direction: row;
+        width: 40vw;
+    }
+
+} */
