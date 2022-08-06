@@ -16,7 +16,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           <li className="nav-item bubbly-button">
             <a
               id="navAbout"
-              href="#home"
+              href="#about"
               onClick={() => handlePageChange('AboutMe')}
               // This is a conditional (ternary) operator that checks to see if the current page is "Home"
               // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
@@ -28,7 +28,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           <li className="nav-item bubbly-button">
             <a
               id="navPortfolio"
-              href="#about"
+              href="#portfolio"
               onClick={() => handlePageChange('MyWork')}
               // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
               className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
@@ -39,7 +39,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           <li className="nav-item bubbly-button">
             <a
               id="navContact"
-              href="#blog"
+              href="#contact"
               onClick={() => handlePageChange('ContactMe')}
               // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
               className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
